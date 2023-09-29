@@ -13,3 +13,7 @@ variable "policy_arn_id" {
 variable "role_name" {
   type = string
 }
+
+variable "resource_tags" {
+  type = map
+}

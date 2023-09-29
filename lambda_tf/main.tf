@@ -10,4 +10,5 @@ resource "aws_lambda_function" "lambda_func" {
   role          = var.role_attach
   runtime       =      var.lang
   handler       =    var.code_handler
+  tags = var.resource_tags
 }

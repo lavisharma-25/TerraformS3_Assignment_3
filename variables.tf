@@ -29,3 +29,7 @@ variable "language" {
 variable "hand" {
   type = string
 }
+
+variable "common_tags" {
+  type = map(any)
+}

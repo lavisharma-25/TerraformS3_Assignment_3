@@ -4,6 +4,7 @@ module "roles" {
   name_of_policy = var.pname
   policy_arn_id = module.roles.policy_output
   role_name     = module.roles.role_output
+  resource_tags = merge(var.common_tags)
 }
 
 module "lambda" {
@@ -15,4 +16,5 @@ module "lambda" {
   lang = var.language
   code_handler = var.hand
   role_attach = module.roles.role_arn
+  resource_tags = merge(var.common_tags)
 }

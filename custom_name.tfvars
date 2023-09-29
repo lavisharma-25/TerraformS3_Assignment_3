@@ -13,3 +13,9 @@ fun_name = "lambda-lavish-tf"
 language = "python3.11"
 
 hand = "python_code.lambda_handler"
+
+common_tags = {
+  "Name" = "lavish"
+  "Owner" = "lavish.sharma@cloudeq.com"
+  "Purpose" = "assignment"
+}

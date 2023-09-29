@@ -25,3 +25,7 @@ variable "lang" {
 variable "code_handler" {
   type = string
 }
+
+variable "resource_tags" {
+  type = map
+}
